@@ -1,6 +1,6 @@
-// ========================================
+
 // MOBILE MENU
-// ========================================
+
 
 const menuBtn = document.querySelector(".menu-btn");
 const closeBtn = document.querySelector(".close-btn");
@@ -29,9 +29,8 @@ mobileLinks.forEach(link => {
 });
 
 
-// ========================================
 // TYPEWRITER EFFECT
-// ========================================
+
 
 const words = [
 
@@ -106,9 +105,8 @@ function typeEffect() {
 typeEffect();
 
 
-// ========================================
 // STICKY NAVBAR EFFECT
-// ========================================
+
 
 const navbar = document.querySelector(".navbar");
 
@@ -137,9 +135,9 @@ window.addEventListener("scroll", () => {
 });
 
 
-// ========================================
+
 // BUTTON RIPPLE EFFECT
-// ========================================
+
 
 const buttons = document.querySelectorAll(".btn");
 
@@ -162,9 +160,9 @@ buttons.forEach(button => {
 });
 
 
-// ========================================
+
 // FLOATING IMAGE
-// ========================================
+
 
 const image = document.querySelector(".image-box");
 
@@ -184,9 +182,9 @@ function floatingImage() {
 floatingImage();
 
 
-// ========================================
+
 // CONSOLE MESSAGE
-// ========================================
+
 
 console.log("%cPortfolio V2.0",
 "color:#00ff99;font-size:24px;font-weight:bold");
@@ -194,9 +192,9 @@ console.log("%cPortfolio V2.0",
 console.log("%cDeveloped by Muhammad Atif",
 "color:white;font-size:16px;");
 
-// ============================================
+
 // SCROLL TO TOP BUTTON
-// ============================================
+
 
 // Create Button
 
@@ -239,9 +237,9 @@ scrollBtn.addEventListener("click", () => {
 });
 
 
-// ============================================
+
 // SCROLL PROGRESS BAR
-// ============================================
+
 
 const progressBar = document.createElement("div");
 
@@ -263,9 +261,8 @@ window.addEventListener("scroll", () => {
 });
 
 
-// ============================================
 // ACTIVE NAVIGATION
-// ============================================
+
 
 const sections = document.querySelectorAll("section");
 
@@ -302,9 +299,8 @@ window.addEventListener("scroll", () => {
 });
 
 
-// ============================================
+
 // REVEAL ELEMENTS
-// ============================================
 
 const revealElements = document.querySelectorAll(
 
@@ -333,9 +329,9 @@ const observer = new IntersectionObserver(entries => {
 revealElements.forEach(el => observer.observe(el));
 
 
-// ============================================
+
 // SIMPLE PRELOADER
-// ============================================
+
 
 window.addEventListener("load", () => {
 
@@ -344,9 +340,9 @@ window.addEventListener("load", () => {
 });
 
 
-// ============================================
+
 // KEYBOARD SHORTCUT
-// ============================================
+
 
 document.addEventListener("keydown", e => {
 
@@ -374,8 +370,36 @@ document.addEventListener("contextmenu", e => {
 */
 
 
+/*====================================
+        THEME TOGGLE
+====================================*/
+
+const themeSwitch = document.getElementById("themeSwitch");
+
+// Check saved theme
+if (localStorage.getItem("theme") === "light") {
+    document.body.classList.add("light");
+}
+
+// Toggle Theme
+themeSwitch.addEventListener("click", () => {
+
+    document.body.classList.toggle("light");
+    console.log(document.body.className);
+
+    // Save Theme
+    if (document.body.classList.contains("light")) {
+        localStorage.setItem("theme", "light");
+    } else {
+        localStorage.setItem("theme", "dark");
+    }
+
+});
+
+
 // ============================================
 // PERFORMANCE
 // ============================================
 
 console.log("Portfolio Loaded Successfully 🚀");ss
+

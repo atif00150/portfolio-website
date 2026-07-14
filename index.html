@@ -24,7 +24,7 @@
 
 <body>
 
-    <!-- ================= Background ================= -->
+    <!-- Background -->
 
     <div class="background">
 
@@ -34,43 +34,59 @@
 
     </div>
 
-    <!-- ================= Navbar ================= -->
+  <!-- Navbar -->
 
-    <header>
+<header>
 
-        <nav class="navbar">
+    <nav class="navbar">
 
-            <div class="logo">
+        <div class="logo">
 
-                <span>Atif</span>Dev
+            <span>Atif</span>Dev
 
-            </div>
+        </div>
 
-            <ul class="nav-links">
+        <ul class="nav-links">
 
-                <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
 
-                <li><a href="#">About</a></li>
+            <li><a href="#">About</a></li>
 
-                <li><a href="#">Skills</a></li>
+            <li><a href="#">Skills</a></li>
 
-                <li><a href="#">Projects</a></li>
+            <li><a href="#">Projects</a></li>
 
-                <li><a href="#">Contact</a></li>
+            <li><a href="#">Contact</a></li>
 
-            </ul>
+        </ul>
 
-            <div class="menu-btn">
+        <!-- Theme Toggle -->
 
-                <i class="fa-solid fa-bars"></i>
+        <div class="theme-switch" id="themeSwitch">
 
-            </div>
+    <i class="fa-solid fa-moon moon"></i>
 
-        </nav>
+    <div class="switch-track">
 
-    </header>
+        <div class="switch-thumb"></div>
 
-    <!-- ================= Mobile Menu ================= -->
+    </div>
+
+    <i class="fa-solid fa-sun sun"></i>
+
+</div>
+
+        <div class="menu-btn">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+
+    </nav>
+
+</header>
+
+    <!-- Mobile Menu  -->
 
     <div class="mobile-menu">
 
@@ -88,7 +104,7 @@
 
     </div>
 
-    <!-- ================= Hero ================= -->
+    <!--  Hero  -->
 
     <section class="hero">
 
@@ -166,7 +182,7 @@
 
     </section>
     
-
+   <!--  About Section  -->
     <section class="about" id="about">
 
     <div class="about-image">
@@ -233,8 +249,187 @@
     </div>
 
 </section>
-    <!-- Scroll Indicator -->
+<!-- ================= WHAT I DO SECTION ================= -->
 
+<section id="services" class="services">
+
+    <div class="section-title" data-aos="fade-up">
+        <h2>What I Do</h2>
+        <p>I create digital experiences through development, creative editing, and marketing.</p>
+    </div>
+
+    <div class="service-container">
+
+        <!-- Frontend -->
+
+        <div class="service-card" data-aos="fade-right">
+
+            <div class="icon">
+                <i class="fa-solid fa-code"></i>
+            </div>
+
+            <h3>Frontend Development</h3>
+
+            <p>
+                I build modern, responsive and user-friendly websites
+                using HTML, CSS, JavaScript and React.
+            </p>
+
+            <ul>
+                <li>Responsive Websites</li>
+                <li>Modern UI Design</li>
+                <li>Landing Pages</li>
+                <li>Portfolio Websites</li>
+            </ul>
+
+            <a href="#projects">Explore <i class="fa-solid fa-arrow-right"></i></a>
+
+        </div>
+
+        <!-- Video Editing -->
+
+        <div class="service-card" data-aos="zoom-in">
+
+            <div class="icon">
+                <i class="fa-solid fa-video"></i>
+            </div>
+
+            <h3>Video Editing</h3>
+
+            <p>
+                Professional editing for YouTube videos,
+                Instagram reels, podcasts and promotional content.
+            </p>
+
+            <ul>
+                <li>Instagram Reels</li>
+                <li>YouTube Videos</li>
+                <li>Podcast Editing</li>
+                <li>Motion Graphics</li>
+            </ul>
+
+            <a href="#videos">Watch Work <i class="fa-solid fa-play"></i></a>
+
+        </div>
+
+        <!-- Marketing -->
+
+        <div class="service-card" data-aos="fade-left">
+
+            <div class="icon">
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
+
+            <h3>Social Media Marketing</h3>
+
+            <p>
+                Helping brands grow through content strategy,
+                social media management and digital marketing.
+            </p>
+
+            <ul>
+                <li>Content Strategy</li>
+                <li>Meta Marketing</li>
+                <li>Brand Awareness</li>
+                <li>Campaign Management</li>
+            </ul>
+
+            <a href="#marketing">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==========================
+        TECH STACK
+===========================-->
+
+<section class="tech-stack" id="skills">
+
+    <div class="section-title" data-aos="fade-up">
+        <h2>Tech Stack</h2>
+        <p>
+            I combine development, creativity, and marketing to build complete digital experiences.
+        </p>
+    </div>
+
+    <div class="tech-container">
+
+        <!-- Frontend -->
+
+        <div class="tech-card" data-aos="fade-right">
+
+            <div class="tech-title">
+                <i class="fa-solid fa-code"></i>
+                <h3>Frontend Development</h3>
+            </div>
+
+            <div class="tags">
+
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Responsive Design</span>
+
+            </div>
+
+        </div>
+
+        <!-- Editing -->
+
+        <div class="tech-card" data-aos="zoom-in">
+
+            <div class="tech-title">
+                <i class="fa-solid fa-video"></i>
+                <h3>Video Editing</h3>
+            </div>
+
+            <div class="tags">
+
+                <span>Premiere Pro</span>
+                <span>After Effects</span>
+                <span>CapCut</span>
+                <span>Instagram Reels</span>
+                <span>YouTube</span>
+                <span>Podcast Editing</span>
+                <span>Motion Graphics</span>
+
+            </div>
+
+        </div>
+
+        <!-- Marketing -->
+
+        <div class="tech-card" data-aos="fade-left">
+
+            <div class="tech-title">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Digital Marketing</h3>
+            </div>
+
+            <div class="tags">
+
+                <span>Meta Ads</span>
+                <span>Facebook</span>
+                <span>Instagram</span>
+                <span>SEO</span>
+                <span>Branding</span>
+                <span>Content Strategy</span>
+                <span>Analytics</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- Scroll Indicator -->
     <div class="scroll-down">
 
         <span></span>
